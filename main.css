@@ -1,0 +1,228 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My css below: */
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.main-head {
+    color: lightgreen;
+    font-size: 2.5rem;
+    line-height: 3rem;
+}
+
+p {
+    padding: 20px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+button {
+    display: block;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0;
+    background-color: lightgreen;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 3px solid lightgreen;
+}
+
+button:hover {
+    border: 3px solid white;
+}
+
+.place-name {
+    text-align: center;
+}
+
+input {
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.display-error {
+    color: red;
+}
+
+.foursquare-info {
+    text-align: center;
+}
+
+li {
+    padding-top: 15px;
+    line-height: 1.5rem;
+}
+
+label {
+    padding-top: 20px;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: center;
+    color: lightgreen;
+}
+
+h3 {
+    font-weight: 1.2rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: lightgreen;
+    font-weight: bold;
+}
+
+.center-text {
+    text-align: center;
+}
+
+main {
+    color: white;
+    background-color: black;
+    font-family: 'Karla', sans-serif;
+}
+
+hr {
+    color: lightgreen;
+    width: 75%;
+    max-width: 400px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input {
+    margin-left: 10px;
+    padding-left: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.loading-screen {
+    display: none;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+html {
+    background: black;
+}
+
+.highlight-data {
+    color: lightgreen;
+    font-weight: bold;
+}
+
+.flex-form {
+    padding-top: 20px;
+}
+
+h1 > a {
+    text-decoration: none;
+    color: lightgreen;
+}
+
+.place-info {
+    display: none;
+}
+
+@media only screen and (min-width:660px){
+    main {
+        max-width: 600px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        border-radius: 5px;
+        border: 2px solid white;
+    }
+
+    html {
+        background-image: url("background.jpg");
+        background-size: cover;
+    }
+    
+    .flex-form {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+

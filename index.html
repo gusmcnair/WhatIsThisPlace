@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What Is This Place?</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="main-head"><a href="index.html"><i class="fas fa-map-marked-alt"></i> What Is This Place?</a></h1>
+        </header>
+        <section class="place-info">
+                <article class="census-info">  
+                </article>
+                <article class="foursquare-info">
+                    <h2>Where do people hang out here?</h2>
+                    <ul class="foursquare-venues">
+                    </ul>
+                </article>
+            </section>
+            <section class="loading-screen">Loading . . . </section>
+            <hr>
+            <p class="center-text instructions">Press the button below to get your location using GPS. Make sure your device or browser has permission to access your location.</p>
+            <form class="init-form">
+                <button name="submit-button" id="submit-button" type="submit">Search by GPS</button>
+            </form>
+            <section class="display-error center-text">
+            </section>
+            <section class="location-name">
+                <p class="center-text">Or try inputting the location's name manually:</p>
+                <form class="place-name">
+                    <div class="flex-form">
+                    <fieldset>
+                    <label for="city-name">City, Village or Place Name</label>
+                    <input name="city-name" id="city-name" placeholder="Madison" type="text" required><br>
+                </fieldset>
+                <fieldset>
+                    <label for="state-name">State initials</label>
+                    <input name="state-name" id="state-name" placeholder="WI" type="text" required>
+                </fieldset>  
+            </div>
+                    <button name="geocode-button" id="geocode-button" type="submit">Search by text</button>
+                </form>
+            </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
