@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="A simple app, designed to tell you where you are.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>What Is This Place?</title>
     <link href="main.css" rel="stylesheet" type="text/css" />
@@ -18,7 +19,7 @@
                 <article class="census-info">  
                 </article>
                 <article class="foursquare-info">
-                    <h2>Where do people hang out here?</h2>
+                    <h2>Where do people hang out?</h2>
                     <ul class="foursquare-venues">
                     </ul>
                 </article>
@@ -44,8 +45,9 @@
                     <input name="state-name" id="state-name" placeholder="WI" type="text" required>
                 </fieldset>  
             </div>
-                    <button name="geocode-button" id="geocode-button" type="submit">Search by text</button>
+                    <button name="geocode-button" id="geocode-button" type="submit">Search by name</button>
                 </form>
+                <p class="disclaimer">What Is This Place uses US Census data, and only works in places within the United States.</label>
             </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

@@ -1,3 +1,5 @@
+const getLocationApi = "https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAbOJBsHu8NRJnwsjAK_UONAWnDd2eh6LA&considerIp=true"
+
 //FUNCTIONS THAT ACTIVATE ON BUTTON PRESS
 
 //When geolocation button is pressed, run functions to get location.
@@ -26,7 +28,7 @@ function watchForm() {
 //Get location from Google geolocation API. If this fails, run getLocationFromBrowser function.
 //If successful, run displayresults.
 function getLocationFromAPI() {
-    fetch("https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyAbOJBsHu8NRJnwsjAK_UONAWnDd2eh6LA&considerIp=true")
+    fetch(getLocationApi)
         .then(response => {
             if (response.ok) {
                 return response.json();
@@ -116,7 +118,7 @@ function getLocationFromInput(locationName) {
             })
             .then(responseJson => grabCensusData(responseJson))
             .catch(err => {
-                console.log(err)
+                displayTextError();
             })
     };
 
@@ -226,7 +228,7 @@ function getLocationFromInput(locationName) {
             })
             .then(responseJson => displayFourSquare(responseJson))
             .catch(err => {
-                console.log("Aw, shit.")
+                console.log("That didn't work.")
             })
     };
 
