@@ -6,6 +6,7 @@
     <meta description="A simple app, designed to tell you where you are.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>What Is This Place?</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" rel="stylesheet">
     <link href="main.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
@@ -27,12 +28,10 @@
             </section>
             <section class="loading-screen">Loading . . . </section>
             <hr>
-            <p class="center-text instructions">Press the button below to get your location using GPS. Make sure your device or browser has permission to access your location.</p>
+            <p class="center-text instructions">Press the button below to get info about your location using GPS. Make sure your device or browser has permission to access your location.</p>
             <form class="init-form">
                 <button name="submit-button" id="submit-button" type="submit">Search by GPS</button>
             </form>
-            <section class="display-error center-text">
-            </section>
             <section class="location-name">
                 <p class="center-text">Or try inputting the location's name manually:</p>
                 <form class="place-name">
@@ -51,6 +50,7 @@
                 <p class="disclaimer">What Is This Place uses US Census data, and only works in places within the United States.</label>
             </section>
     </main>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="index.js"></script>
 </body>
