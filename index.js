@@ -44,6 +44,7 @@ function getLocationFromAPI() {
         })
         .then(responseJson => displayResults(responseJson))
         .catch(err => {
+            console.log("Google geolocation failed, which is expected on some devices. Attempting to get location from browser.")
             getLocationFromBrowser();
         });
 }
